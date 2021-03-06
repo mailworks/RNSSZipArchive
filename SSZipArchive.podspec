@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/mailworks/RNSSZipArchive', :tag => "v#{s.version}" }
   s.ios.deployment_target = '4.0'
   s.osx.deployment_target = '10.6'
-  s.source_files = 'SSZipArchive/*', 'SSZipArchive/minizip/*', 'SSZipArchive/aes/*'
-  s.public_header_files = 'SSZipArchive/*.h'
+  s.source_files = '*', 'minizip/*', 'aes/*'
+  s.public_header_files = '*.h'
   s.library = 'z'
   s.requires_arc = true
 end
